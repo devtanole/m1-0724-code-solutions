@@ -9,7 +9,7 @@ const orderHistory = [
     returnWindow: 'September 7, 2020',
     prodArr: [
       {
-        prodName: 'JavaScript for impatient Programmers',
+        prodName: 'JavaScript for Impatient Programmers',
         author: 'Dr. Axel Rauschmayer',
         prodTotal: 31.55,
       },

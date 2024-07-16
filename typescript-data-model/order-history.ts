@@ -1,15 +1,19 @@
-// interface product {prodArr: [{prodName: string; author?: string; prodTotal: number;}];}
-interface order {
+interface Product {
+  prodName: string;
+  prodTotal: number;
+  author?: string;
+}
+interface Order {
   orderPlaced: string;
   orderTotal: number;
   orderNumber: string;
   shipTo: string;
   delivery: string;
   returnWindow: string;
-  prodArr: any[];
+  prodArr: Product[];
 }
 
-const orderHistory: order[] = [
+const orderHistory: Order[] = [
   {
     orderPlaced: 'August 4, 2020',
     orderTotal: 34.0,
@@ -19,7 +23,7 @@ const orderHistory: order[] = [
     returnWindow: 'September 7, 2020',
     prodArr: [
       {
-        prodName: 'JavaScript for impatient Programmers',
+        prodName: 'JavaScript for Impatient Programmers',
         author: 'Dr. Axel Rauschmayer',
         prodTotal: 31.55,
       },
