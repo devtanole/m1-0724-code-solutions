@@ -33,7 +33,11 @@ function startsWithJ(string: string): any {
   }
 }
 
-function isOldEnoughToDrink(person: { name: string; age: number }): any {
+interface person {
+  name: string;
+  age: number;
+}
+function isOldEnoughToDrink(person: person): any {
   if (person.age < 21) {
     return false;
   } else {
@@ -41,7 +45,7 @@ function isOldEnoughToDrink(person: { name: string; age: number }): any {
   }
 }
 
-function isOldEnoughToDrive(person: { name: string; age: number }): any {
+function isOldEnoughToDrive(person: person): any {
   if (person.age >= 16) {
     return true;
   } else {
@@ -49,10 +53,7 @@ function isOldEnoughToDrive(person: { name: string; age: number }): any {
   }
 }
 
-function isOldEnoughToDrinkAndDrive(person: {
-  name: string;
-  age: number;
-}): any {
+function isOldEnoughToDrinkAndDrive(person: person): any {
   if (person.age && person.name) {
     return false;
   }
