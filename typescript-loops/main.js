@@ -7,7 +7,7 @@
             getKeys,
             getValues
  */
-//getNumbersToTen
+// getNumbersToTen
 function getNumbersToTen() {
   const numbers = [];
   let currentNumber = 1;
@@ -18,7 +18,7 @@ function getNumbersToTen() {
   return numbers;
 }
 console.log('getNumbersToTen:', getNumbersToTen());
-//getNumbersToTwenty
+// getNumbersToTwenty
 function getEvenNumbersToTwenty() {
   const evenNumbers = [];
   let currentNumber = 2;
@@ -29,7 +29,7 @@ function getEvenNumbersToTwenty() {
   return evenNumbers;
 }
 console.log('getEvenNumbersToTwenty:', getEvenNumbersToTwenty());
-//repeatWord
+// repeatWord
 function repeatWord(word, times) {
   let count = 1;
   let repeated = '';
@@ -43,14 +43,14 @@ function repeatWord(word, times) {
   return repeated;
 }
 console.log('repeatWord("repeat", 22)', repeatWord('repeat', 23));
-//logEachCharacter
+// logEachCharacter
 function logEachCharacter(str) {
   for (let i = 0; i < str.length; i++) {
     console.log(str[i]);
   }
 }
 console.log(logEachCharacter('Devin'));
-//doubleAll
+// doubleAll
 function doubleAll(numbers) {
   const doubled = [];
   for (let i = 0; i < numbers.length; i++) {
@@ -60,11 +60,11 @@ function doubleAll(numbers) {
   return doubled;
 }
 console.log('doubleAll [1, 2, 4, 7]:', doubleAll([1, 2, 4, 7]));
-//getKeys
+// getKeys
 function getKeys(obj) {
   const keys = [];
   for (const key in obj) {
-    keys.push(`${key}`);
+    keys.push(key);
   }
   return keys;
 }
@@ -72,11 +72,11 @@ console.log(
   'getKeys:{firstName: Rick, lastName: Blaine, age: 33}',
   getKeys({ firstName: 'Rick', lastName: 'Blaine', age: 33 })
 );
-//getValues
+// getValues
 function getValues(obj) {
   const values = [];
   for (const value in obj) {
-    values.push(`${obj[value]}`);
+    values.push(value);
   }
   return values;
 }

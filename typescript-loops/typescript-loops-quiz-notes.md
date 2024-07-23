@@ -7,17 +7,17 @@ Answer the following questions in the provided markdown file before turning in t
 - What is the purpose of a loop?
   A: Loops are good for code reusability, working with collections, efficiency and controlling flow.
 - What is the purpose of a **condition** expression in a loop?
-  A: Condition expression runs while the expression is true.
+  A: The loop repeats for as long as the condition is true.
 - What does "iteration" mean in the context of loops?
   A: Every time the loop runs from start to finish.
 - _When_ does the **condition** expression of a `while` loop get evaluated?
-  A: First
+  A: Once at the start.
 - _When_ does the **initialization** expression of a `for` loop get evaluated?
-  A: First
+  A: Before each iteration.
 - _When_ does the **condition** expression of a `for` loop get evaluated?
   A: Second
 - _When_ does the **final** expression of a `for` loop get evaluated?
-  A: Third/last
+  A: After 1 round of the loop is done.
 - Besides a `return` statement, which exits its entire function block, which keyword exits a loop before its **condition** expression evaluates to `false`?
   A: break
 - What does the `++` increment operator do?

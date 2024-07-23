@@ -69,7 +69,7 @@ console.log('doubleAll [1, 2, 4, 7]:', doubleAll([1, 2, 4, 7]));
 function getKeys(obj: Record<string, unknown>): string[] {
   const keys: string[] = [];
   for (const key in obj) {
-    keys.push(`${key}`);
+    keys.push(key);
   }
   return keys;
 }
@@ -82,7 +82,7 @@ console.log(
 function getValues(obj: Record<string, unknown>): any {
   const values: string[] = [];
   for (const value in obj) {
-    values.push(`${obj[value]}`);
+    values.push(value);
   }
   return values;
 }
