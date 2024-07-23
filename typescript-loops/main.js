@@ -74,9 +74,9 @@ console.log(
 );
 // getValues
 function getValues(obj) {
-  const values = [];
-  for (const value in obj) {
-    values.push(value);
+  const valuesArr = [];
+  for (const key in obj) {
+    valuesArr.push(obj[key]);
   }
-  return values;
+  return valuesArr;
 }

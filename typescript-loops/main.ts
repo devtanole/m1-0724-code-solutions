@@ -80,9 +80,9 @@ console.log(
 
 // getValues
 function getValues(obj: Record<string, unknown>): any {
-  const values: string[] = [];
-  for (const value in obj) {
-    values.push(value);
+  const valuesArr: any[] = [];
+  for (const key in obj) {
+    valuesArr.push(obj[key]);
   }
-  return values;
+  return valuesArr;
 }
