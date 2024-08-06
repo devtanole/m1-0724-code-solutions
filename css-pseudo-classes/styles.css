@@ -1,0 +1,19 @@
+button:hover {
+  background-color: blueviolet;
+}
+
+th {
+  color: white;
+  background-color: black;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+td.shade:nth-child(-n + 3) {
+  background-color: #615d5d;
+  color: rgb(235, 234, 234);
+}
