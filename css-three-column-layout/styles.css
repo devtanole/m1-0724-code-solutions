@@ -1,0 +1,16 @@
+body {
+  background-color: #318ce7;
+}
+
+h1 {
+  color: white;
+  font-family: Lato, sans-serif;
+  text-align: center;
+  position: relative;
+  top: 57px;
+}
+
+img {
+  position: relative;
+  display: flex;
+}
