@@ -1,5 +1,5 @@
 body {
-  background-color: #318ce7;
+  background-color: #0cafff;
 }
 
 h1 {
@@ -8,9 +8,68 @@ h1 {
   text-align: center;
   position: relative;
   top: 57px;
+  white-space: nowrap;
+}
+
+h2,
+p {
+  font-family: Lato, sans-serif;
+  text-align: center;
+}
+
+p {
+  color: whitesmoke;
+  font-size: smaller;
 }
 
 img {
-  position: relative;
   display: flex;
+  width: 100%;
+}
+
+h2 {
+  white-space: nowrap;
+  color: white;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.column-full {
+  flex-basis: 100%;
+}
+
+.column-third {
+  width: 150px;
+  height: 150px;
+  justify-content: space-between;
+  border-radius: 50%;
+  background-color: white;
+  padding: 33px;
+  align-items: center;
+  position: relative;
+  top: 75px;
+  object-fit: cover;
+}
+
+#discussion {
+  left: 20px;
+}
+
+#merge {
+  right: 20px;
+}
+
+.column-third-text {
+  position: relative;
+  top: 75px;
+  flex-basis: calc(100% / 3);
+  margin-left: 10px;
 }
