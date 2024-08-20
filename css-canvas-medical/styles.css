@@ -1,15 +1,16 @@
+body {
+  margin: 0;
+}
+
 .container {
   margin: 0 auto;
   width: 100%;
 }
 
-body {
-  margin: 0;
-}
-
 .row {
   display: flex;
-  flex-direction: row;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .contact {
@@ -53,7 +54,6 @@ p {
 
 .column-full {
   flex-basis: 100%;
-  flex-direction: column;
 }
 
 .home-img {
@@ -63,12 +63,13 @@ p {
   display: flex;
   height: 90vh;
   width: 100%;
+  position: relative;
 }
 
 .emr {
   position: absolute;
-  top: 30%;
-  left: 13%;
+  top: 220px;
+  left: 151px;
   font-family: 'Tiempos Headline', sans-serif;
   color: #fff;
   font-size: 30px;
@@ -80,8 +81,8 @@ p {
 
 .home-para {
   position: absolute;
-  top: 41%;
-  left: 11%;
+  top: 300px;
+  left: 125px;
   font-family: sans-serif;
   color: white;
   flex-direction: column;
@@ -98,10 +99,7 @@ p {
   margin-right: auto;
   padding: 10px;
   position: absolute;
-  bottom: 218px;
+  bottom: 240px;
   width: 100px;
-  left: 140px;
-  vertical-align: top;
-  overflow: auto;
-  max-width: 100%;
+  left: 148px;
 }
