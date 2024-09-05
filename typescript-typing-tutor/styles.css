@@ -1,0 +1,21 @@
+.type-container {
+  font-size: 50px;
+  font-family: monospace;
+}
+
+span {
+  display: inline-block;
+  padding: 0 2px;
+}
+
+.correct {
+  color: greenyellow;
+}
+
+.incorrect {
+  color: red;
+}
+
+.current {
+  border-bottom: 2px black;
+}
