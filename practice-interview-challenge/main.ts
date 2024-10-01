@@ -1,29 +1,32 @@
-function getRangeReport(start: number, end: number): any {
-  const avg: number = (start + end) / 2;
+interface RangeReport {
+  average: number;
+  evens: number[];
+  odds: number[];
+  total: number;
+  range: number[];
+}
+
+function getRangeReport(start: number, end: number): RangeReport {
   const rangeArr: number[] = [];
   for (let i = start; i <= end; i++) {
     rangeArr.push(i);
   }
-  const evenArr: number[] = [];
-  for (let i = 2; i <= end; i += 2) {
-    evenArr.push(i);
-  }
-  const oddArr: number[] = [];
-  for (let i = 1; i <= end; i += 2) {
-    oddArr.push(i);
-  }
-  let total: number = 0;
-  for (let i = 0; i < rangeArr.length; i++) {
-    total += rangeArr[i];
-  }
+  const evenArr: number[] = rangeArr.filter((number) => number % 2 === 0);
+
+  const oddArr: number[] = rangeArr.filter((number) => number % 2 !== 0);
+
+  const total = rangeArr.reduce(function (x: number, y: number) {
+    return x + y;
+  }, 0);
+  const avg: number = total / rangeArr.length;
   return {
     average: avg,
     evens: evenArr,
     odds: oddArr,
     range: rangeArr,
-    sum: total,
+    total,
   };
 }
 
-console.log('getRange of 4 and 12:', getRangeReport(4, 12));
+console.log('getRange of 1 and 7:', getRangeReport(1, 7));
 console.log('logging');

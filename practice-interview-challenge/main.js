@@ -1,29 +1,22 @@
 'use strict';
 function getRangeReport(start, end) {
-  const avg = (start + end) / 2;
   const rangeArr = [];
   for (let i = start; i <= end; i++) {
     rangeArr.push(i);
   }
-  const evenArr = [];
-  for (let i = 2; i <= end; i += 2) {
-    evenArr.push(i);
-  }
-  const oddArr = [];
-  for (let i = 1; i <= end; i += 2) {
-    oddArr.push(i);
-  }
-  let total = 0;
-  for (let i = 0; i < rangeArr.length; i++) {
-    total += rangeArr[i];
-  }
+  const evenArr = rangeArr.filter((number) => number % 2 === 0);
+  const oddArr = rangeArr.filter((number) => number % 2 !== 0);
+  let total = rangeArr.reduce(function (x, y) {
+    return x + y;
+  }, 0);
+  const avg = total / rangeArr.length;
   return {
     average: avg,
     evens: evenArr,
     odds: oddArr,
     range: rangeArr,
-    sum: total,
+    total: total,
   };
 }
-console.log('getRange of 4 and 12:', getRangeReport(4, 12));
+console.log('getRange of 1 and 7:', getRangeReport(1, 7));
 console.log('logging');
