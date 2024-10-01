@@ -26,3 +26,4 @@ function getRangeReport(start, end) {
   };
 }
 console.log('getRange of 4 and 12:', getRangeReport(4, 12));
+console.log('logging');
