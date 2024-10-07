@@ -10,7 +10,7 @@ Answer the following questions in the provided markdown file before turning in t
   - What should the callback function do?
     A: take an element as an argument, return undefined
   - What is `Array.forEach` useful for?
-    A: when you want to iterate over items in the order they appear
+    A: execute side effects at end of chain
 - `Array.map`:
   - What does `Array.map` do?
     A: creates new array with the results of calling a provided function on every element in the calling array.
